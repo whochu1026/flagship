@@ -1,0 +1,21 @@
+{
+  "name": "flagship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test -w @flagship/api",
+    "dev:api": "npm run start:dev -w @flagship/api",
+    "dev:web": "npm run dev -w @flagship/web",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "db:migrate": "npm run prisma:migrate -w @flagship/api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": "true",
+  "workspaces": [
+    "apps/*"
+  ]
+}
